@@ -2,7 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from "./components/Navbar";
+import Navbaar from "./components/Navbar";
+// import CarouselImg from "./components/Carousel";
 import About from "./pages/About";
 
 
@@ -10,10 +11,10 @@ function App() {
   return (
 
     <Router>
-      <Navbar />
+      <Navbaar />
+      {/* <CarouselImg /> */}
       <Routes>
         <Route path="/" />
-        {/* Assuming you have a Home component */}
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
