@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbaar from "./components/Navbar";
 // import CarouselImg from "./components/Carousel";
 import About from "./pages/About";
+import Home from './pages/Home';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -14,8 +16,9 @@ function App() {
       <Navbaar />
       {/* <CarouselImg /> */}
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About />} />
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </Router>
 
@@ -23,3 +26,4 @@ function App() {
 }
 
 export default App;
+
